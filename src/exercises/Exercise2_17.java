@@ -24,6 +24,5 @@ public class Exercise2_17 {
             System.out.printf("%d%s%n", b, " is smallest");
         if ((c < a) & (c < b))
             System.out.printf("$d$s$n", c, " is smallest");
-
     }
 }
