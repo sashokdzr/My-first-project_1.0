@@ -1,4 +1,4 @@
-package theory;
+package theory.ch2;
 
 import java.util.Scanner;
 
