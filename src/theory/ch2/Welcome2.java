@@ -1,4 +1,4 @@
-package theory;
+package theory.ch2;
 
 public class Welcome2 {
     public static void main(String[] args){
