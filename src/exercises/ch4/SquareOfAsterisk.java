@@ -5,25 +5,21 @@ public class SquareOfAsterisk {
         if ((i > 0) && (i < 21)) {
             int k = 0;
             while (k < i) {
-                if ((k > 1) && (k <= i)) {
-                    System.out.println();
-                    k++;
-                    int l = 0;
-                    while (l < i) {
+                int l = 0;
+                while (l < i) {
+                    if ((k == 0) || (l == 0) || (l == i - 1) || (k == i - 1)) {
                         System.out.print(" * ");
-                        l++;
-                    }
-                } else {
-                    System.out.println();
-                    k++;
-                    int l = 0;
-                    while (l < i) {
+                    } else {
                         System.out.print("   ");
-                        l++;
                     }
+                    l++;
                 }
+                k++;
+                System.out.println();
+
             }
 
         }
+
     }
 }
