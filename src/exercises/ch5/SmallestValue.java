@@ -6,17 +6,18 @@ public class SmallestValue {
     private int[] arr = new int[firstValue];
     private int smallest;
 
-    public SmallestValue(int firstValue, int value) {
+    public SmallestValue(int firstValue) {
         this.firstValue = firstValue;
-        this.value = value;
     }
 
-    public void enter() {
+    public int[] enter(int firstValue, int value) {
+        this.value = value;
+        this.firstValue = firstValue;
         int[] arr = new int[firstValue];
         for (int i = 0; i <= firstValue; i++) {
             arr[i] = value;
         }
-        this.arr = arr;
+        return arr;
     }
 
     public void smallest() {
