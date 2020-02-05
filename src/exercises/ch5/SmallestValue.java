@@ -1,55 +1,31 @@
-package exercises.ch5;
+import java.util.Scanner;
 
-public class SmallestValue {
+class SmallestValue {
+    private Scanner s = new Scanner(System.in);
     private int firstValue;
-    private int value;
-    private int[] arr = new int[firstValue];
-    private int smallest;
-
-    public SmallestValue(int firstValue) {
+    SmallestValue(int firstValue) {
         this.firstValue = firstValue;
     }
-
-    public int[] enter(int firstValue, int value) {
-        this.value = value;
+    int[] enter(int firstValue) {
         this.firstValue = firstValue;
         int[] arr = new int[firstValue];
-        for (int i = 0; i <= firstValue; i++) {
+        for (int i = 0; i < firstValue; i++) {
+            System.out.printf("Input values #%d %n", i+1);
+            int value = s.nextInt();
             arr[i] = value;
         }
         return arr;
     }
-
-    public void smallest() {
-        smallest = arr[0];
-        for (int i = 1; i < firstValue; i++) {
+    int smallest(int[] arr) {
+        int smallest = arr[0];
+        for (int i = 0; i < firstValue; i++) {
             if (arr[i] < smallest) {
                 smallest = arr[i];
             }
         }
-    }
-
-    public void setFirstValue(int firstValue) {
-        this.firstValue = firstValue;
-    }
-
-    public int getFirstValue() {
-        return firstValue;
-    }
-
-    public int getSmallest() {
         return smallest;
     }
-
-    public void setValue(int value) {
-        this.value = value;
-    }
-
-    public void setArr(int[] arr) {
-        this.arr = arr;
-    }
-
-    public int[] getArr() {
-        return arr;
+    int getFirstValue() {
+        return firstValue;
     }
 }
