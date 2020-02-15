@@ -19,32 +19,8 @@ public class Date {
         else System.out.println("Incorrect year value");
     }
 
-    public int getMonth() {
-        return month;
-    }
-
-    public void setMonth(int month) {
-        this.month = month;
-    }
-
-    public int getDay() {
-        return day;
-    }
-
-    public void setDay(int day) {
-        this.day = day;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public void displayDate() {
-        System.out.println("Today is " + month + "/" + day + "/" + year);
+    public void displayDate(int i, int j, int k) {
+        System.out.println("Today is " + i + "/" + j + "/" + k);
     }
 }
 
