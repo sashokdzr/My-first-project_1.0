@@ -12,7 +12,7 @@ public class PrintingProgram {
             if (number > 0 && number <= 30) {
                 arr[i] = number;
             } else {
-                System.out.println("All numbers shoud be from1 to 30 (Null by default)");
+                System.out.println("All numbers should be from 1 to 30 (Null by default)");
                 arr[i] = 0;
             }
         }
